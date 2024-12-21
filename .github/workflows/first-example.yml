@@ -1,0 +1,17 @@
+name: My First Workflow
+
+
+on: push
+
+jobs:
+    first_name:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcome Message
+              run: echo "Hello World"
+
+            - name: List_Files
+              run: ls
+
+            - name: IP Adderess
+              run: hostname -I
