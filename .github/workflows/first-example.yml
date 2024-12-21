@@ -14,10 +14,18 @@ jobs:
               run: echo "Hello World"
 
             - name: List_Files
-              run: ls
+              run: |
+                  ls
+                  ls -la
+                  ifconfig
+                  ping google.com
+
 
             - name: IP Adderess
               run: hostname -I
 
             - name: Cat command to README
               run: cat README.md
+
+            - name: Generate ASCII Artwork With cowsay
+              run: cowsay -f dragon "DracarysSSSSSSSS" > dragon.txt
