@@ -1,6 +1,8 @@
 name: third party package
 
-on: push
+on:
+  push:
+    branches: [new-1]
 
 jobs:
   cowsay_package:
