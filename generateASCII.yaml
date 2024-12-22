@@ -1,0 +1,14 @@
+name : third party package
+
+on: push
+
+job:
+  cowsay_package:
+    runs_on: ubuntu-latest
+    steps:
+    - name: update
+      run: sudo apt update
+    - name: install cowsay package
+      run: sudo apt install cowsay
+    - name: Generate ASCII Artwork With cowsay
+      run: cowsay -f dragon "DracarysSSSSSSSS" > dragon.txt
