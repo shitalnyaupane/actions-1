@@ -12,3 +12,5 @@ jobs:
       run: sudo apt install cowsay
     - name: Generate ASCII Artwork With cowsay
       run: cowsay -f dragon "DracarysSSSSSSSS" > dragon.txt
+    - name: See ASCII art
+      run: cat dragon.txt
