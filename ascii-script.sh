@@ -2,7 +2,7 @@
 
 sudo apt update
 
-sudo apr install cowsay -y
+sudo apt install cowsay -y
 
 cowsay -f dragon "DracarysSSSSSSSS" > dragon.txt
 
