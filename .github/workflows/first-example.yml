@@ -27,5 +27,5 @@ jobs:
             - name: Cat command to README
               run: cat README.md
 
-            - name: Generate ASCII Artwork With cowsay
-              run: cowsay -f dragon "DracarysSSSSSSSS" > dragon.txt
+            # - name: Generate ASCII Artwork With cowsay
+            #   run: cowsay -f dragon "DracarysSSSSSSSS" > dragon.txt
