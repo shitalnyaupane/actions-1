@@ -6,11 +6,11 @@ jobs:
   cowsay_package:
     runs-on: ubuntu-latest
     steps:
-    - name: update
-      run: sudo apt update
-    - name: install cowsay package
-      run: sudo apt install cowsay
-    - name: Generate ASCII Artwork With cowsay
-      run: cowsay -f dragon "DracarysSSSSSSSS" > dragon.txt
-    - name: See ASCII art
-      run: cat dragon.txt
+    - name: Checkout project repo
+      run: actions/checkout@v4
+
+    - name: Check files in the dir
+      run: ls -ltra
+
+    - name: executing shell sccript
+      run: ./ascii-script.sh
