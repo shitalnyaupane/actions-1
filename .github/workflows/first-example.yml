@@ -1,31 +1,31 @@
-name: My First Workflow
-on:
-  push:
-    branches: [main]
+# name: My First Workflow
+# on:
+#   push:
+#     branches: [main]
 
-jobs:
-    first_name:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout To Repository
-              uses: actions/checkout@v4
+# jobs:
+#     first_name:
+#         runs-on: ubuntu-latest
+#         steps:
+#             - name: Checkout To Repository
+#               uses: actions/checkout@v4
 
-            - name: Welcome Message
-              run: echo "Hello World"
+#             - name: Welcome Message
+#               run: echo "Hello World"
 
-            - name: List_Files
-              run: |
-                  ls
-                  ls -la
-                  ifconfig
-            - name: Test Connectivity
-              run: curl -I https://www.google.com
+#             - name: List_Files
+#               run: |
+#                   ls
+#                   ls -la
+#                   ifconfig
+#             - name: Test Connectivity
+#               run: curl -I https://www.google.com
 
-            - name: IP Adderess
-              run: hostname -I
+#             - name: IP Adderess
+#               run: hostname -I
 
-            - name: Cat command to README
-              run: cat README.md
+#             - name: Cat command to README
+#               run: cat README.md
 
-            # - name: Generate ASCII Artwork With cowsay
-            #   run: cowsay -f dragon "DracarysSSSSSSSS" > dragon.txt
+#             # - name: Generate ASCII Artwork With cowsay
+#             #   run: cowsay -f dragon "DracarysSSSSSSSS" > dragon.txt

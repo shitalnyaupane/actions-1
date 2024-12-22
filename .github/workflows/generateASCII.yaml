@@ -7,10 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout project repo
-      run: actions/checkout@v4
+      uses: actions/checkout@v4
 
     - name: Check files in the dir
       run: ls -ltra
+
+    - name: change permission to execute script
+      run: chmod +x ascii-script.sh
 
     - name: executing shell sccript
       run: ./ascii-script.sh
